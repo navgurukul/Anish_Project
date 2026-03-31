@@ -21,6 +21,8 @@ function Navbar() {
       label: 'Home',
       path: '/',
       dropdown: [
+        { label: 'Study Behind Foundation', path: '/#story-behind-foundation' },
+        { label: 'Current Project', path: '/#current-project' },
         { label: 'Mission & Trustee', path: '/mission' } ,
         { label: 'Past Initiatives', path: '/past-initiatives' } // You can create a /mission route later
       ]
