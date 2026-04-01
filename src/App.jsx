@@ -85,7 +85,7 @@ function App() {
         
           <Route path="/contact" element={<ContactUs />} /> 
           <Route path="/donate" element={<Donate />} />
-          <Route path="/pedagogy" element={<Pedagogy />} />
+          <Route path="/pedagogy-and-higher-education" element={<Pedagogy />} />
     
         </Routes>
       </main>

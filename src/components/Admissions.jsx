@@ -123,7 +123,7 @@ const Admissions = () => {
       {/* --- Final CTA --- */}
       <section className={styles.finalCta}>
         <h2>Ready to start your journey?</h2>
-        <a href="https://admissions.navgurukul.org/" className={styles.heroCta}>Apply Now</a>
+        <a href="https://admissions.navgurukul.org/" target="_blank" rel="noopener noreferrer" className={styles.heroCta}>Apply Now</a>
       </section>
 
     </div>

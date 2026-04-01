@@ -28,51 +28,7 @@ const PastInitiatives = () => {
                 <p className={styles.pageSubtitle}>Addressing the roots of the problem since 2019</p>
             </motion.section>
 
-            {/* SECTION 1: The Higher Education Gap (Context) */}
-            <section className={styles.gapSection}>
-                <motion.div 
-                    className={styles.contentWrapper}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    variants={baseVariants}
-                >
-                    <h2 className={styles.sectionHeading}>The Higher Education Gap</h2>
-                    <p className={styles.sectionDescription}>
-                        India's higher education system struggles to equip students with the skills needed for real-world employment. 
-                        Limited affordability, outdated curricula, language barriers, and a disconnect from industry demands leave millions of students unprepared.
-                    </p>
-
-                    {/* Challenges Grid */}
-                    <div className={styles.challengesGrid}>
-                        <motion.div className={styles.challengeCard} variants={cardVariants}>
-                            <div className={styles.iconCircle}>₹</div>
-                            <h3>Unaffordability</h3>
-                            <p>Public colleges are guarded by tough entrance exams, and private ones are often financially out of reach for the underprivileged.</p>
-                        </motion.div>
-
-                        <motion.div className={styles.challengeCard} variants={cardVariants}>
-                            <div className={styles.iconCircle}>⚙️</div>
-                            <h3>Outdated Curricula</h3>
-                            <p>Lack of proper pedagogy and an improper learning environment lead to a disconnect with modern industry needs.</p>
-                        </motion.div>
-
-                        <motion.div className={styles.challengeCard} variants={cardVariants}>
-                            <div className={styles.iconCircle}>💬</div>
-                            <h3>Language Barrier</h3>
-                            <p>Most content is in English, making it difficult for students from marginalized backgrounds to compete.</p>
-                        </motion.div>
-
-                        <motion.div className={styles.challengeCard} variants={cardVariants}>
-                            <div className={styles.iconCircle}>💼</div>
-                            <h3>Unemployability</h3>
-                            <p>Even after completing college, ~97% of engineers lack the technical and cognitive skills required for software-related jobs.</p>
-                        </motion.div>
-                    </div>
-                </motion.div>
-            </section>
-
-            {/* SECTION 2: 2019 Past Initiative (Anudip Partnership) */}
+            {/* SECTION 1: 2019 Past Initiative (Anudip Partnership) */}
             <section className={styles.initiativeSection}>
                 <div className={styles.contentWrapper}>
                     <motion.div 

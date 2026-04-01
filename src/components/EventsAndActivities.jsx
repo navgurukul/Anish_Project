@@ -5,7 +5,6 @@ import styles from './EventsAndActivities.module.css';
 
 // Images Import (Placeholder use kar raha hu, aap apne imports use karein)
 import womansDayImage from '../assets/womans-Day.jpg';
-import exercisePhoto from '../assets/Excercise 5.jpg';
 import hackathonsPhoto from '../assets/Programming Hackathon.jpeg';
 
 // --- DATA: Expanded with Highlights for more info ---
