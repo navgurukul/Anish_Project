@@ -24,7 +24,7 @@ function Navbar() {
         { label: 'Study Behind Foundation', path: '/#story-behind-foundation' },
         { label: 'Current Project', path: '/#current-project' },
         { label: 'Mission & Trustee', path: '/mission' } ,
-        { label: 'Mission & Trustee', path: '/mission#trustee'}
+        { label: 'Mission & Trustee', path: '/mission#trustee'},
         { label: 'Past Initiatives', path: '/past-initiatives' } // You can create a /miss
       ]
     },
