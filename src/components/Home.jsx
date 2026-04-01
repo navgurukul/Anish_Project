@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import { Target, Users, BookOpen } from 'lucide-react'; // Icons for beneficiaries
 import styles from './Home.module.css';
 
@@ -20,66 +20,65 @@ const staggerContainer = {
 
 const HeroSection = () => {
     return (
-        <motion.section
+        <Motion.section
             className={styles.modernHeroSection}
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
         >
             <div className={styles.heroContent}>
-                <motion.h1 className={styles.modernTitle} variants={baseVariants}>Anish Jadhav</motion.h1>
-                <motion.h1 className={styles.modernTitleBlue} variants={baseVariants}>Memorial</motion.h1>
-                <motion.h1 className={styles.modernTitle} variants={baseVariants}>Foundation</motion.h1>
+                <Motion.h1 className={styles.modernTitle} variants={baseVariants}>Anish Jadhav</Motion.h1>
+                <Motion.h1 className={styles.modernTitleBlue} variants={baseVariants}>Memorial</Motion.h1>
+                <Motion.h1 className={styles.modernTitle} variants={baseVariants}>Foundation</Motion.h1>
 
-                <motion.p className={styles.modernSubtitle} variants={baseVariants}>
+                <Motion.p className={styles.modernSubtitle} variants={baseVariants}>
                     TORCH BEARER FOR THE NEEDY
-                </motion.p>
+                </Motion.p>
 
             </div>
             <div className={styles.modernHeroImageContainer}>
                 <img src={campusImg4} alt="Team" className={styles.modernHeroImage} />
             </div>
-        </motion.section>
+        </Motion.section>
     );
 };
 
 // --- 2. NEW: STORY BEHIND THE FOUNDATION (Shifted from AboutAnish) ---
 const FoundationStorySection = () => {
     return (
-        <section className={styles.storySection}>
+        <section id="story-behind-foundation" className={styles.storySection}>
             <div className={styles.storyContainer}>
                 {/* Left: Text Content */}
-                <motion.div
+                <Motion.div
                     className={styles.storyContent}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={staggerContainer}
                 >
-                    <motion.h2 className={styles.sectionTitle} variants={baseVariants}>
+                    <Motion.h2 className={styles.sectionTitle} variants={baseVariants}>
                         The Story Behind the Foundation
-                    </motion.h2>
-                    <motion.div className={styles.storyDivider} variants={baseVariants}></motion.div>
+                    </Motion.h2>
+                    <Motion.div className={styles.storyDivider} variants={baseVariants}></Motion.div>
 
-                    <motion.p className={styles.storyText} variants={baseVariants}>
+                    <Motion.p className={styles.storyText} variants={baseVariants}>
                         The <strong>Anish Jadhav Memorial Foundation (AJMF)</strong> is a non-profit NGO established
                         in memory of <strong>Anish Jadhav</strong>, the only child of Brigadier Kishor and Mrs. Neeta Jadhav.
                         Anish worked with Nikon India’s Core Technical Team before his untimely passing.
-                    </motion.p>
-                    <motion.p className={styles.storyText} variants={baseVariants}>
-                        AJMF, registered under the Bombay Public Trust Act of 1950 on 10 August 2018, is dedicated to providing
-                        skills training to the underprivileged across India.
-                    </motion.p>
+                    </Motion.p>
+                    <Motion.p className={styles.storyText} variants={baseVariants}>
+                        AJMF, registered under the Bombay Public Trust Act of 1950 on 10 August 2018, is dedicated to providing skills training to the underprivileged across India.
+                    </Motion.p>
 
-                    <motion.ul className={styles.storyList} variants={baseVariants}>
+                    <Motion.ul className={styles.storyList} variants={baseVariants}>
                         <li>India faces a significant skills gap between industry requirements and workforce capabilities.</li>
-                        <li>Contributing factors include inadequate training facilities and outdated curricula.</li>
-                        <li>To bridge this gap, AJMF focuses on mapping local skill demands and tailoring programs to meet specific needs.</li>
-                    </motion.ul>
-                </motion.div>
+                        <li>This gap is mainly caused by inadequate training facilities and outdated curricula.</li>
+                        <li>To address this issue, AJMF focuses on identifying local skill demands and designing programs that meet specific industry needs.</li>
+                    </Motion.ul>
+                </Motion.div>
 
                 {/* Right: Image Decoration */}
-                <motion.div
+                <Motion.div
                     className={styles.storyImageWrapper}
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -88,7 +87,7 @@ const FoundationStorySection = () => {
                 >
                     <div className={styles.imageBackdrop}></div>
                     <img src={BrigadierJadhav} alt="Founder" className={styles.storyImage} />
-                </motion.div>
+                </Motion.div>
             </div>
         </section>
     );
@@ -97,12 +96,12 @@ const FoundationStorySection = () => {
 // --- 3. NEW: CURRENT PROJECT & IMPACT (Special Presentation) ---
 const CurrentProjectSection = () => {
     return (
-        <section className={styles.impactSection}>
+        <section id="current-project" className={styles.impactSection}>
             <div className={styles.impactOverlay}></div> {/* Dark overlay for text pop */}
 
             <div className={styles.impactContainer}>
                 {/* Main Collaboration Statement */}
-                <motion.div
+                <Motion.div
                     className={styles.impactHeader}
                     initial="hidden"
                     whileInView="visible"
@@ -115,9 +114,9 @@ const CurrentProjectSection = () => {
                         <span className={styles.highlightWhite}> FREE residential education</span> in Software Engineering & Digital Marketing.
                     </h2>
                     <p className={styles.impactSubText}>
-                        Empowering 150 underprivileged girls at the Anish Jadhav Memorial Foundation Skilling Institute.
+                        Empowering underprivileged girls at the Anish Jadhav Memorial Foundation Skilling Institute.
                     </p>
-                </motion.div>
+                </Motion.div>
 
                 {/* Target Beneficiaries - Cards Design */}
                 <div className={styles.beneficiariesWrapper}>
@@ -125,7 +124,7 @@ const CurrentProjectSection = () => {
 
                     <div className={styles.beneGrid}>
                         {/* Card 1 */}
-                        <motion.div
+                        <Motion.div
                             className={styles.beneCard}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -135,10 +134,10 @@ const CurrentProjectSection = () => {
                             <div className={styles.iconBox}><Users size={32} /></div>
                             <h4>Underprivileged Youth</h4>
                             <p>Talented youth from low-income backgrounds who cannot afford expensive college education.</p>
-                        </motion.div>
+                        </Motion.div>
 
                         {/* Card 2 */}
-                        <motion.div
+                        <Motion.div
                             className={styles.beneCard}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -148,10 +147,10 @@ const CurrentProjectSection = () => {
                             <div className={styles.iconBox}><Target size={32} /></div>
                             <h4>Girls from Humble Backgrounds</h4>
                             <p>Daughters of daily wage laborers, maids, auto-drivers, and brick kiln workers seeking a better future.</p>
-                        </motion.div>
+                        </Motion.div>
 
                         {/* Card 3 */}
-                        <motion.div
+                        <Motion.div
                             className={styles.beneCard}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -161,7 +160,7 @@ const CurrentProjectSection = () => {
                             <div className={styles.iconBox}><BookOpen size={32} /></div>
                             <h4>Struggling Graduates</h4>
                             <p>Graduates unable to find suitable employment due to a lack of industry-specific technical skills.</p>
-                        </motion.div>
+                        </Motion.div>
                     </div>
                 </div>
             </div>

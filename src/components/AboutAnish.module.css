@@ -599,3 +599,44 @@
     }
 }
 
+@media (max-width: 1025px) {
+
+    .heroImageCollage {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .imageWrapper1,
+    .imageWrapper2,
+    .imageWrapper3 {
+        position: relative;   /* absolute hata diya */
+        width: 70%;
+        height: auto;
+        transform: none;
+        top: unset;
+        left: unset;
+        right: unset;
+        bottom: unset;
+        opacity: 1;
+    }
+
+    .heroImageCollage img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .imageWrapper3 {
+        display: block;  /* third image bhi dikhe */
+    }
+
+    .quarterCircle {
+        display: none;  /* design element hide kar do mobile me */
+    }
+}
