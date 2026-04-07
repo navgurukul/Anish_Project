@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
 import styles from './Navbar.module.css';
-import ajmfLogo from '../assets/AJMF.jpeg'; 
+import ajmfLogo from '../assets/AJMF-P.png'; 
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ function Navbar() {
         { label: 'Story Behind Foundation', path: '/#story-behind-foundation' },
         { label: 'Current Project', path: '/#current-project' },
         { label: 'Mission & Vision', path: '/mission' } ,
-        { label: 'Founder Trustee', path: '/mission#trustee'},
+        { label: 'Founder  & Trustee', path: '/mission#trustee'},
         { label: 'Past Initiatives', path: '/past-initiatives' } // You can create a /miss
       ]
     },

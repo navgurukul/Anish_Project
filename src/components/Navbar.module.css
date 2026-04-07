@@ -313,11 +313,11 @@
   height: 120px; /* HEIGHT BADHAI: Pehle 80px tha, ab bada hai taki logo fit ho */
 }
 
-/* Logo */
+ 
 .logoImage {
-  height: 90px; /* LOGO SIZE: Logo ab bada dikhega */
+  height: 100px;  
   width: auto;
-  display: block; /* Images ke niche ka extra space hatane ke liye */
+  display: block;  
 }
 
 /* --- DESKTOP MENU --- */
