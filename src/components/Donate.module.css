@@ -177,17 +177,25 @@
   }
   
   .amountCard {
+    width: 100%;
     background-color: var(--white);
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
     transition: transform 0.2s;
+    cursor: pointer;
   }
   
   .amountCard:hover {
     transform: translateY(-3px);
     border-color: var(--gold-accent);
+  }
+
+  .amountCardActive {
+    border-color: var(--gold-accent);
+    box-shadow: 0 10px 20px rgba(255, 145, 0, 0.12);
+    transform: translateY(-2px);
   }
   
   .amountValue {
@@ -257,6 +265,97 @@
   
   .tabContent {
     padding: 2rem;
+  }
+
+  .helperText {
+    margin: 1rem 0 0;
+    color: var(--text-grey);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .gatewayBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .gatewayTitle {
+    font-size: 1.1rem;
+    color: var(--navy-blue);
+    margin: 0;
+  }
+
+  .gatewayText {
+    color: var(--text-grey);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .gatewayList {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--text-dark);
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .checkoutBtn {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 0.95rem 1rem;
+    background: linear-gradient(135deg, var(--bright-blue), var(--navy-blue));
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.98rem;
+    cursor: pointer;
+    box-shadow: 0 12px 24px rgba(0, 28, 79, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .checkoutBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 28px rgba(0, 28, 79, 0.22);
+  }
+
+  .checkoutBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
+    box-shadow: 0 8px 18px rgba(0, 28, 79, 0.12);
+  }
+
+  .gatewayStatus {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    min-height: 1.4em;
+  }
+
+  .idle {
+    color: var(--text-grey);
+  }
+
+  .loading {
+    color: var(--bright-blue);
+  }
+
+  .success {
+    color: #1b7a3f;
+    font-weight: 600;
+  }
+
+  .error {
+    color: #c0362c;
+    font-weight: 600;
+  }
+
+  .gatewayNote {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-grey);
+    line-height: 1.5;
   }
   
   /* Detail Rows */
@@ -463,6 +562,10 @@
     .tabBtn { padding: 0.8rem; font-size: 0.9rem; }
     
     .tabContent { padding: 1.5rem; }
+
+    .checkoutBtn {
+      padding: 0.9rem 1rem;
+    }
   }
   
   @media (max-width: 768px) {
@@ -579,6 +682,11 @@
     
     .tabContent { 
       padding: 1.2rem;
+    }
+
+    .helperText,
+    .gatewayNote {
+        font-size: 0.8rem;
     }
     
     .detailRow { 
@@ -776,6 +884,10 @@
     
     .activeTab {
       border-bottom-width: 2px;
+    }
+
+    .checkoutBtn {
+        font-size: 0.9rem;
     }
     
     .tabContent { 

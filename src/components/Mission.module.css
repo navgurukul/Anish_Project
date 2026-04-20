@@ -31,8 +31,8 @@
 .missionVisionSection {
     width: 100%;
     max-width: 1400px;
-    margin: 40px auto 60px auto; 
-    padding: 0 20px;
+    margin: 24px auto 56px auto;
+    padding: 0 24px;
     box-sizing: border-box;
 }
 
@@ -40,6 +40,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 30px;
+    align-items: stretch;
 }
 
 .missionVisionCard {
@@ -49,6 +50,9 @@
     height: 100%;
     box-sizing: border-box;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .cardTitle {
@@ -68,11 +72,18 @@
     font-size: clamp(1.1rem, 1.5vw, 1.05rem);
     line-height: 1.6;
     color: var(--v-m-text-dark);
+    margin: 0;
+    flex: 1;
 }
 
 @media (max-width: 900px) {
     .cardsContainer {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .missionVisionSection {
+        margin-bottom: 44px;
     }
 }
 

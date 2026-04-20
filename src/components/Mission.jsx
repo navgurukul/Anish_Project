@@ -30,9 +30,9 @@ const MissionVisionSection = () => {
                     transition={{ delay: 0.1 }}
                     viewport={{ once: true, amount: 0.4 }}
                 >
-                    <h2 className={styles.cardTitle}>VISION</h2>
+                    <h2 className={styles.cardTitle}>MISSION</h2>
                     <p className={styles.cardText}>
-                        To enable a dignified life for underprivileged communities by focusing on skill development, capacity building, and sustainable growth.
+                        Anish Jadhav Memorial Foundation aims to enhance employment opportunities and entrepreneurship through various social and educational programs that promote skill development.
                     </p>
                 </motion.div>
 
@@ -44,9 +44,9 @@ const MissionVisionSection = () => {
                     transition={{ delay: 0.3 }}
                     viewport={{ once: true, amount: 0.4 }}
                 >
-                    <h2 className={styles.cardTitle}>MISSION</h2>
+                    <h2 className={styles.cardTitle}>VISION</h2>
                     <p className={styles.cardText}>
-                        Anish Jadhav Memorial Foundation aims to enhance employment opportunities and entrepreneurship through various social and educational programs that promote skill development.
+                        To enable a dignified life for underprivileged communities by focusing on skill development, capacity building, and sustainable growth.
                     </p>
                 </motion.div>
             </div>
@@ -105,48 +105,6 @@ const VisionInPartnershipSection = () => {
         </motion.section>
     );
 };
-
-// const Mission = () => {
-//     const { hash } = useLocation();
-
-//     useEffect(() => {
-//         if (hash) {
-//             const id = hash.replace('#', '');
-//             const element = document.getElementById(id);
-//             if (element) {
-//                 setTimeout(() => {
-//                     // Offset matlab kitna pixel upar se jagah chhodni hai
-//                     // Agar 100px navbar hai, toh hum 120px ki jagah chhodenge
-//                     const offset = 190; 
-//                     const bodyRect = document.body.getBoundingClientRect().top;
-//                     const elementRect = element.getBoundingClientRect().top;
-//                     const elementPosition = elementRect - bodyRect;
-//                     const offsetPosition = elementPosition - offset;
-
-//                     window.scrollTo({
-//                         top: offsetPosition,
-//                         behavior: 'smooth'
-//                     });
-//                 }, 100);
-//             }
-//         } else {
-//             window.scrollTo({ top: 0, behavior: 'smooth' });
-//         }
-//     }, [hash]);
-
-//     return (
-//         <div className={styles.pageContainer}>
-//             <div style={{ textAlign: 'center', padding: '40px 0 0 0' }}>
-//                 <h1 className={styles.modernTitleBlue}>Our Mission & Vision</h1>
-//             </div>
-
-//             <MissionVisionSection />
-//             <FounderSection />
-//             <PedagogySection />
-//             <VisionInPartnershipSection />
-//         </div>
-//     );
-// };
 
 
 const Mission = () => {
