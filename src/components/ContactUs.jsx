@@ -39,7 +39,7 @@ function ContactUs() {
   const facebookUrl = "https://www.facebook.com/anishjmf/";
   const instagramUrl = "https://www.instagram.com/explore/locations/112795623857018/anish-jadhav-memorial-foundation/";
   const linkedinUrl = "https://www.linkedin.com/posts/brigadier-dr-kishor-jadhav-ph-d-97a3934b_anish-jadhav-memorial-foundation-skilling-activity-7180232279640719360-Uw2g/";
-  const youtubeUrl = "https://www.youtube.com/watch?v=eHyWsRh03Tk";
+  const youtubeUrl = "https://www.youtube.com/@AnishJadhavMemorialFoundation";
 
   const [openFaq, setOpenFaq] = useState(null);
   // const [mapLoaded, setMapLoaded] = useState(false); // New state for map
